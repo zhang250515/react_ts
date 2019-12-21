@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import User from "./user";
 
 const App: React.FC = () => {
   let arr = ['jack', 'kent', 'frank'];
@@ -27,6 +28,7 @@ const App: React.FC = () => {
         >
           Learn React
         </a>
+        <User name={'kent'} age={18}/>
       </header>
     </div>
   );
