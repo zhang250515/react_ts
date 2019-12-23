@@ -1,11 +1,11 @@
 import React, {Component} from "react";
 
-interface UserProps {
+interface UserEntity {
   name: string | null,
   age: number | null
 }
 
-class User extends Component<UserProps> {
+class User extends Component<UserEntity> {
   render() {
     return (
       <div>

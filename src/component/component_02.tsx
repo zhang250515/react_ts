@@ -1,7 +1,9 @@
 import React from "react";
 import Root01 from "./component_01";
+import Component_03 from "./component_03";
 
 const Root02: React.FC = () => {
+
   return (
     <div>
       <p> Component 02 </p>
@@ -10,6 +12,7 @@ const Root02: React.FC = () => {
       <p> component 03</p>
       <p> clock! </p>
       <h2>it is {new Date().toLocaleTimeString()} </h2>
+      <Component_03/>
     </div>
   )
 };
