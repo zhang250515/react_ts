@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './antd/antD.css'
 import * as serviceWorker from './serviceWorker';
-import Ts01 from "./typescript/typescript_01";
+import AntDemo01 from "./antd/demo01";
 
 function tick() {
-  ReactDOM.render(<Ts01 />, document.getElementById('root'));
+  ReactDOM.render(<AntDemo01 />, document.getElementById('root'));
 }
 
 tick();
