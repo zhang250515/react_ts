@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import Root02 from "./component/component_02";
+import Ts01 from "./typescript/typescript_01";
 
 function tick() {
-  ReactDOM.render(<Root02 />, document.getElementById('root'));
+  ReactDOM.render(<Ts01 />, document.getElementById('root'));
 }
 
 tick();

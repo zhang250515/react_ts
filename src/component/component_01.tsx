@@ -1,7 +1,7 @@
 import React from "react";
 
 interface NameProps {
-  name: string | null
+  name?: string | null
 }
 
 const Root01: React.FC<NameProps> = (nameProps: NameProps) => {

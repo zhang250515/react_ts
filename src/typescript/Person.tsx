@@ -1,5 +1,5 @@
 export interface Person {
-    name: string | null;
-    age: number | null;
+    name?: string | null;
+    age?: number | null;
 }
 

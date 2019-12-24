@@ -9,7 +9,7 @@ const Root02: React.FC = () => {
     <div>
       <p> Component 02 </p>
       <p> {Root01.defaultProps} </p>
-      <Root01 name={'jack'}/>
+      <Root01/>
       <p> component 03</p>
       <p> clock! </p>
       <h2>it is {new Date().toLocaleTimeString()} </h2>
