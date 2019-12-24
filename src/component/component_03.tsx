@@ -1,11 +1,35 @@
 import React, {Component} from "react";
 
-class Component_03 extends Component<string>{
+interface MyState {
+  time: string
+}
 
-  render(){
+class Component_03 extends Component<any, MyState> {
+
+  constructor(props: any) {
+    super(props);
+    this.state = {
+      time: new Date().toLocaleTimeString()
+    }
+  }
+
+  handleChange() {
+    this.setState({
+      time: new Date().toLocaleTimeString()
+    })
+  }
+
+  componentDidMount() {
+    console.log('component did mount')
+  }
+
+  render() {
     return (
       <div>
-        {this.props}
+        now is :
+        <p>{this.state.time}</p>
+
+        <button onClick={() => this.handleChange()}> change time</button>
       </div>
     )
   }

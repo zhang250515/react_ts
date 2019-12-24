@@ -4,7 +4,9 @@ interface NameProps {
   name: string | null
 }
 
-const Root01: React.FC<NameProps> = (name: NameProps) => {
+const Root01: React.FC<NameProps> = (nameProps: NameProps) => {
+
+
   let color = {
     color: 'red',
     fontSize: '40px'
@@ -22,8 +24,8 @@ const Root01: React.FC<NameProps> = (name: NameProps) => {
       <p style={color}> world {a} </p>
       <button onClick={handler}>  click !</button>
       <p> user name is : </p>
-      <p> {name.name} </p>
-      <p> {name.name} </p>
+      <p> {nameProps.name} </p>
+      <p> {nameProps.name} </p>
     </div>
   )
 };
