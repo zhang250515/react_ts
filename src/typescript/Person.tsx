@@ -1,5 +1,5 @@
 export interface Person {
-    name?: string | null;
+    readonly name?: string | null;
     age?: number | null;
 }
 
