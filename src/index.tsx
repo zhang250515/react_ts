@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import './antd/antD.css'
 import * as serviceWorker from './serviceWorker';
-import AntDemo01 from "./antd/demo01";
+import Layout from "./antd/layout_demo";
 
 function tick() {
-  ReactDOM.render(<AntDemo01 />, document.getElementById('root'));
+  ReactDOM.render(<Layout />, document.getElementById('root'));
 }
 
 tick();
