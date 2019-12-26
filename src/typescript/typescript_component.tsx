@@ -11,6 +11,15 @@ const TyComponent: React.FC = () => {
       <p> {greet.greet()} </p>
       <p> {func.add(1,2)} </p>
       <p> {func.myAdd(1,2)} </p>
+      <p>
+        my name is {func.nameCall('jack', 'ma')}
+      </p>
+      <p>
+        my name is {func.nameCall('kent')}
+      </p>
+      <p>
+
+      </p>
     </div>
   )
 };
